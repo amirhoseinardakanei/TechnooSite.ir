@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_render_partial',
     'home_app',
+    'contact_app',
 ]
 
 MIDDLEWARE = [
