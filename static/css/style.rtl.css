@@ -5535,7 +5535,7 @@ small,
 /* Text Clip */
 
 .text-clip--primary {
-    background: -webkit-linear-gradient(var(--bs-white) 20%, var(--bs-primary) 65%);
+    background: #c7f32f;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

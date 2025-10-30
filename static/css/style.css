@@ -10606,7 +10606,7 @@ small,
 }
 
 [data-bs-theme=dark][data-theme=home-2] {
-    --bs-primary: #6328ff;
+    --bs-primary: #c7f32f;
     --bs-primary-rgb: 99, 40, 255;
     --bs-primary-text-emphasis: #efeaff;
     --bs-primary-bg-subtle: #15063f;
@@ -10622,7 +10622,7 @@ small,
 }
 
 [data-bs-theme=dark][data-theme=home-4] {
-    --bs-primary: #5c65ff;
+    --bs-primary: #c7f32f;
     --bs-primary-rgb: 92, 101, 255;
     --bs-primary-text-emphasis: #f6f7fd;
     --bs-primary-bg-subtle: #03063a;
