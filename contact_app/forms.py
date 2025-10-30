@@ -10,9 +10,9 @@ class ContactForm(forms.ModelForm):
                 'class': 'form-control',
                 'placeholder': 'نام',
             }),
-            'email': forms.EmailInput(attrs={
+            'email': forms.TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'ایمیل',
+                'placeholder': 'شماره تلفن',
             }),
             'subject': forms.TextInput(attrs={
                 'class': 'form-control',

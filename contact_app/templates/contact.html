@@ -749,27 +749,29 @@
 <div class="col-lg-6">
   <div class="rounded-3 bg-body p-4 p-lg-8 shadow-lg">
 
-    {% if messages %}
-      {% for message in messages %}
-        <div class="alert
-             {% if message.tags == 'success' %}alert-success
-             {% elif message.tags == 'error' %}alert-danger
-             {% else %}alert-info{% endif %}
-             alert-dismissible fade show" role="alert">
-          {{ message }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
-      {% endfor %}
-    {% endif %}
+
 
     <form method="POST" class="row g-4">
       {% csrf_token %}
+      {% if messages %}
+        {% for message in messages %}
+          <div class="alert
+               {% if message.tags == 'success' %}alert-success
+               {% elif message.tags == 'error' %}alert-danger
+               {% else %}alert-info{% endif %}
+               alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+        {% endfor %}
+      {% else %}
+          <div class="col-12">
+            <p class="mb-0 fw-semibold">
+              فرم را پر کنید و ما با شما تماس خواهیم گرفت
+            </p>
+          </div>
+      {% endif %}
 
-      <div class="col-12">
-        <p class="mb-0 fw-semibold">
-          فرم را پر کنید و ما با شما تماس خواهیم گرفت
-        </p>
-      </div>
 
       <div class="col-lg-6">
         <label class="form-label fs-14 fw-medium text-heading">نام</label>
@@ -780,7 +782,7 @@
       </div>
 
       <div class="col-lg-6">
-        <label class="form-label fs-14 fw-medium text-heading">آدرس ایمیل</label>
+        <label class="form-label fs-14 fw-medium text-heading">شماره تلفن</label>
         {{ form.email }}
         {% if form.email.errors %}
           <small class="text-danger">{{ form.email.errors.0 }}</small>
