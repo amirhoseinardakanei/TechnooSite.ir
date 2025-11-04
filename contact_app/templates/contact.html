@@ -29,7 +29,7 @@
       class="navbar navbar-expand-lg primary-header primary-header--dark primary-header--fixed primary-header--boxed top-md-3 primary-header-crossed:top-0 primary-header-crossed:full-dark"
     >
       <div class="container align-items-lg-center">
-        <a class="logo" href="index.html">
+        <a class="logo" href="{% url 'home_app' %}">
           <img
             alt="image"
             class="logo__img logo__img--light"
@@ -56,522 +56,14 @@
           <ul
             class="navbar-nav flex-grow-1 justify-content-center mx-lg-4 mb-2 mb-lg-0"
           >
-            <li class="nav-item has-sub-menu navigation-0">
-              <a aria-current="page" class="nav-link active" href="#">خانه</a>
-              <ul class="navigation-0__menu">
-                <li class="navigation-0__menu-list">
-                  <a class="link navigation-0__menu-link" href="index.html">
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/demo-img-3.png"
-                    />
-                    <span class="navigation-0__menu-title">ژنراتور کد AI</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a class="link navigation-0__menu-link" href="home-2.html">
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/demo-img-2.png"
-                    />
-                    <span class="navigation-0__menu-title">پشتیبانی چت AI</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a class="link navigation-0__menu-link" href="home-3.html">
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/demo-img-1.png"
-                    />
-                    <span class="navigation-0__menu-title"
-                      >هوش مصنوعی کلاسیک</span
-                    >
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a class="link navigation-0__menu-link" href="home-4.html">
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/demo-img-4.png"
-                    />
-                    <span class="navigation-0__menu-title"
-                      >ژنراتور تصویر AI</span
-                    >
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a class="link navigation-0__menu-link" href="home-5.html">
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/demo-img-5.png"
-                    />
-                    <span class="navigation-0__menu-title"
-                      >دستیار توسعه دهنده AI</span
-                    >
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a class="link navigation-0__menu-link" href="home-6.html">
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/demo-img-6.png"
-                    />
-                    <span class="navigation-0__menu-title"
-                      >ژنراتور ویدیویی AI</span
-                    >
-                  </a>
-                </li>
-              </ul>
+
+            <li class="nav-item  navigation-1">
+              <a aria-current="page" class="nav-link" href="{% url 'home_app' %}">خانه</a>
+
             </li>
-            <li class="nav-item has-sub-menu navigation-1">
-              <a aria-current="page" class="nav-link" href="#">صفحات</a>
-              <ul class="navigation-1__menu">
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="about.html"
-                    >درباره ما</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list has-sub-2nd">
-                  <a class="link navigation-1__menu-link" href="#">شغلی</a>
-                  <ul class="navigation-1__sub-menu">
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="career.html"
-                        >فرصت شغلی</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="career-details.html"
-                        >جزئیات شغلی</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="career-application.html"
-                        >اکنون اقدام کنید</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="navigation-1__menu-list has-sub-2nd">
-                  <a class="link navigation-1__menu-link" href="#"
-                    >مطالعه موردی</a
-                  >
-                  <ul class="navigation-1__sub-menu">
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="case-study.html"
-                        >مطالعه موردی</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="case-study-details.html"
-                        >جزئیات مطالعه موردی</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="contact.html"
-                    >با ما تماس بگیرید</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list has-sub-2nd">
-                  <a class="link navigation-1__menu-link" href="#"
-                    >نمونه کارها</a
-                  >
-                  <ul class="navigation-1__sub-menu">
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="portfolio.html"
-                        >نمونه کارها</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="portfolio-details.html"
-                        >جزئیات نمونه کارها</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="pricing.html"
-                    >قیمت گذاری</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list has-sub-2nd">
-                  <a class="link navigation-1__menu-link" href="#">خدمت</a>
-                  <ul class="navigation-1__sub-menu">
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="service.html"
-                        >خدمت</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="service-details.html"
-                        >جزئیات خدمات</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="navigation-1__menu-list has-sub-2nd">
-                  <a class="link navigation-1__menu-link" href="#"
-                    >صفحات دیگر</a
-                  >
-                  <ul class="navigation-1__sub-menu">
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="event-details.html"
-                        >جزئیات رویداد</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="faq.html"
-                        >پرسش</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="feature.html"
-                        >نشان</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="privacy-policy.html"
-                        >سیاست حفظ حریم</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="sign-in-1.html"
-                        >ورود به سیستم - من</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="sign-in-2.html"
-                        >ورود به سیستم - II</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="sign-up-1.html"
-                        >ثبت نام - من</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="sign-up-2.html"
-                        >ثبت نام - II</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item has-sub-menu navigation-1">
-              <a aria-current="page" class="nav-link" href="#">وبلاگ</a>
-              <ul class="navigation-1__menu">
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="blog-2.html"
-                    >وبلاگ مدرن</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="blog-1.html"
-                    >وبلاگ با نوار کناری</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="blog-3.html"
-                    >وبلاگ با نوار کناری چپ</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list">
-                  <a class="link navigation-1__menu-link" href="blog-4.html"
-                    >وبلاگ بدون نوار کناری</a
-                  >
-                </li>
-                <li class="navigation-1__menu-list has-sub-2nd">
-                  <a class="link navigation-1__menu-link" href="#">پست وبلاگ</a>
-                  <ul class="navigation-1__sub-menu">
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="blog-details-1.html"
-                        >ارسال با نوار کناری</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="blog-details-3.html"
-                        >ارسال با نوار کناری چپ</a
-                      >
-                    </li>
-                    <li class="navigation-1__sub-menu-list">
-                      <a
-                        class="link navigation-1__sub-menu-link"
-                        href="blog-details-2.html"
-                        >ارسال بدون نوار کناری</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li
-              class="nav-item has-sub-menu navigation-0 navigation-0--column-6"
-            >
-              <a aria-current="page" class="nav-link" href="#">بلوک</a>
-              <ul class="navigation-0__menu">
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-about.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-about.png"
-                    />
-                    <span class="navigation-0__menu-title">در مورد</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-blog.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-blog.png"
-                    />
-                    <span class="navigation-0__menu-title">وبلاگ</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-cta.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-cta.png"
-                    />
-                    <span class="navigation-0__menu-title"
-                      >فراخوانی به عمل</span
-                    >
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-testimonial.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-testimonial.png"
-                    />
-                    <span class="navigation-0__menu-title">توصیفات</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-contact.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-contact.png"
-                    />
-                    <span class="navigation-0__menu-title">تماس</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-fact.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-fact.png"
-                    />
-                    <span class="navigation-0__menu-title">لیست اطلاعات</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-faq.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-faq.png"
-                    />
-                    <span class="navigation-0__menu-title">پرسش</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-feature.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-features.png"
-                    />
-                    <span class="navigation-0__menu-title">ویژگی</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-hero.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-hero.png"
-                    />
-                    <span class="navigation-0__menu-title">قهرمان</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-footer.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-footer.png"
-                    />
-                    <span class="navigation-0__menu-title">پشته</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-portfolio.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-portfolio.png"
-                    />
-                    <span class="navigation-0__menu-title">نمونه کارها</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-pricing.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-pricing.png"
-                    />
-                    <span class="navigation-0__menu-title">قیمت گذاری</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-team.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-team.png"
-                    />
-                    <span class="navigation-0__menu-title">تیم</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-timeline.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-timeline.png"
-                    />
-                    <span class="navigation-0__menu-title">جدول زمانی</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-ticker.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-ticker.png"
-                    />
-                    <span class="navigation-0__menu-title">تیک زدن</span>
-                  </a>
-                </li>
-                <li class="navigation-0__menu-list">
-                  <a
-                    class="link navigation-0__menu-link"
-                    href="block-page-card.html"
-                  >
-                    <img
-                      alt="image"
-                      class="navigation-0__menu-img"
-                      src="/static/img/shapes/block-menu-card.png"
-                    />
-                    <span class="navigation-0__menu-title">کارت</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+
           </ul>
           <div class="d-flex align-items-center gap-3 ms-lg-auto">
-            <a class="btn btn-sm btn-primary order-lg-2" href="sign-up-1.html"
-              >ثبت نام کردن</a
-            >
             <div
               class="dropdown dropdown-modifier dropdown-xsm order-lg-1 theme-settings"
             >
@@ -641,12 +133,12 @@
                     <div class="col-md-8 col-xl-6">
                       <nav class="mb-3">
                         <ol class="breadcrumb breadcrumb-modifier">
-                          <li class="breadcrumb-item">
-                            <a class="link fs-14" href="#">خانه</a>
+                          <li class="breadcrumb-item" >
+                           خانه
                           </li>
                           <li class="breadcrumb-item">
                             <iconify-icon
-                              class="align-middle fs-14"
+                              class="breadcrumb-item fs-14"
                               icon="bi:chevron-left"
                             ></iconify-icon>
                           </li>
@@ -654,15 +146,12 @@
                             aria-current="page"
                             class="breadcrumb-item active fs-14"
                           >
-                            تماس
+                            تماس با ما
                           </li>
                         </ol>
                       </nav>
-                      <h3>تماس - بلوک ها</h3>
-                      <p class="mb-0 max-text-12">
-                        هر قطعه بلوک سفارشی را در زیر کپی کرده و آن را در صفحه
-                        خود جایگذاری کنید تا وب سایت خود به راحتی بسازید.
-                      </p>
+                      <h3>درخواست پروژه</h3>
+
                     </div>
                   </div>
                   <svg
@@ -719,32 +208,11 @@
           <div class="container">
             <div class="row g-4 justify-content-between align-items-center">
               <div class="col-lg-6 col-xl-5">
+                <hr class="my-8" style="border-color: #c7f32f" />
                 <h3>با ما ارتباط برقرار کنید</h3>
-                <p class="mb-0">
-                  آیا سؤالات مربوط به خدمات یا علاقه مند به همکاری های دیگر؟ما
-                  اینجا هستیم تا از هر قدم شما پشتیبانی کنیم
-                </p>
-                <hr class="my-8" />
-                <ul class="list gap-6">
-                  <li>
-                    <p class="mb-1 fs-18 fw-bold text-heading">
-                      در مورد خدمات ما بیاموزید
-                    </p>
-                    <p class="mb-0">sales@example.com +1 302-803-5506</p>
-                  </li>
-                  <li>
-                    <p class="mb-1 fs-18 fw-bold text-heading">
-                      با بخش روابط عمومی ما صحبت کنید
-                    </p>
-                    <p class="mb-0">support@example.com</p>
-                  </li>
-                  <li>
-                    <p class="mb-1 fs-18 fw-bold text-heading">
-                      به تیم Bplugins بپیوندید
-                    </p>
-                    <p class="mb-0">info@example.com</p>
-                  </li>
-                </ul>
+                <p class="mb-0">برای درخواست پروژه شما میتوانید فرم را پر کنید و تیم تکنوسایت با شما تماس برقرار خواهد کرد.</p>
+                <hr class="my-8" style="border-color: #c7f32f"/>
+
               </div>
 <div class="col-lg-6">
   <div class="rounded-3 bg-body p-4 p-lg-8 shadow-lg">
@@ -806,8 +274,8 @@
       </div>
 
       <div class="col-12">
-        <button class="btn btn-primary fs-14 w-100" type="submit">
-          ارسال کردن
+        <button class="btn text-center btn-primary text-dark fs-14 " type="submit">
+          ارسال
         </button>
       </div>
     </form>
@@ -816,102 +284,13 @@
             </div>
           </div>
         </div>
-        <div class="section-space-xsm-top section-space-bottom">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="tab-group">
-                  <div
-                    class="tab__header d-flex align-items-center justify-content-between gap-4 border-bottom"
-                  >
-                    <div class="tab flex-grow-1">
-                      <button
-                        class="tab__links position-relative z-1 btn btn-sm hover:text-primary border-0"
-                      >
-                        HTML
-                      </button>
-                    </div>
-                    <button
-                      class="btn btn-sm border-0 text-heading hover:text-primary align-items-center gap-1 fw-medium code-snippet-expand"
-                    >
-                      <iconify-icon icon="quill:expand"></iconify-icon>مشاهده کد
-                      کامل
-                    </button>
-                  </div>
-                  <div class="tab__body mt-4">
-                    <div class="tab__content">
-                      <div
-                        class="code-snippet code-snippet--lg overflow-x-auto p-4 rounded-1 bg-body-secondary my-1"
-                      >
-                        <pre><code class="language-html"><!--
- <div class="container">
-<div class="row g-4 justify-content-between align-items-center">
-<div class="col-lg-6 col-xl-5">
-<h3>با ما ارتباط برقرار کنید</h3>
-<p class="mb-0">آیا سؤالات مربوط به خدمات یا علاقه مند به همکاری های دیگر؟
-ما اینجا هستیم تا از هر قدم شما پشتیبانی کنیم</p>
-<hr class="my-8"/>
-<ul class="list gap-6">
-<li>
-<p class="mb-1 fs-18 fw-bold text-heading">در مورد خدمات ما بیاموزید</p>
-<p class="mb-0">sales@example.com +1 302-803-5506</p>
-</li>
-<li>
-<p class="mb-1 fs-18 fw-bold text-heading">با بخش روابط عمومی ما صحبت کنید</p>
-<p class="mb-0">support@example.com</p>
-</li>
-<li>
-<p class="mb-1 fs-18 fw-bold text-heading">به تیم Bplugins بپیوندید</p>
-<p class="mb-0">info@example.com</p>
-</li>
-</ul>
-</div>
-<div class="col-lg-6">
-<div class="rounded-3 bg-body p-4 p-lg-8 shadow-lg">
-<div class="row g-4">
-<div class="col-12">
-<p class="mb-0 fw-semibold">فرم را پر کنید و ما با شما تماس خواهیم گرفت</p>
-</div>
-<div class="col-lg-6">
-<label class="form-label fs-14 fw-medium text-heading">نام</label>
-<input class="form-control" placeholder="نام" type="text"/>
-</div>
-<div class="col-lg-6">
-<label class="form-label fs-14 fw-medium text-heading">آدرس ایمیل</label>
-<input class="form-control" placeholder="ایمیل" type="email"/>
-</div>
-<div class="col-12">
-<label class="form-label fs-14 fw-medium text-heading">موضوع</label>
-<input class="form-control" placeholder="موضوع خود را وارد کنید" type="text"/>
-</div>
-<div class="col-12">
-<label class="form-label fs-14 fw-medium text-heading">پیام</label>
-<textarea class="form-control" placeholder="لطفا جزئیات را بنویسید" rows="3"></textarea>
-</div>
-<div class="col-12">
-<button class="btn btn-primary fs-14" type="button">ارسال کردن</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-                                            --></code></pre>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Contact Block End -->
+
 
 <!-- Footer -->
-<div class="section-space-lg-top section-space-sm-bottom" style="background-color:#000; color:#fff;">
-  <div class="section-space-md-bottom">
-    <div class="container">
-      <div class="row g-5">
+<footer class="footer bg-dark text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row g-5 align-items-start">
+
       <div class="col-md-6 col-lg-4 text-center text-lg-start">
                   <a class="logo" href="index.html">
                     <img
@@ -926,70 +305,39 @@
                     />
                   </a>
       </div>
-        <div class="col-lg-4 col-xxl-4">
-          <div class="row g-4 justify-content-xl-around">
-            <div class="col-sm-12 col-md-12 mt-12">
-              <h2 class="fs-28 text-light mb-3" style="font-weight:bold;">
-                آدرس و نشانی
-                <span class="text-clip text-clip--primary" style="color:#c7f32f;">تکنوسایت</span>
-              </h2>
-              <ul class="list gap-2 ps-0 mb-0">
-                <li>
-                  <a
-                    class="link d-inline-block text-light text-opacity-70 hover:text-opacity-100 fw-medium fs-14"
-                    style="color:rgba(255,255,255,0.7); text-decoration:none;"
-                  >
-                    استان یزد، اردکان، خیابان صدرآباد، میدان انار، خروجی سوم، بلوار حلال احمر، کوچه ۲۹
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-xxl-4">
-          <div class="row g-4 justify-content-xl-around">
-            <div class="col-sm-12 col-md-12 mt-12">
-              <h2 class="fs-28 text-light mb-3" style="font-weight:bold;">
-                ارتباط تلفنی با تیم
-                <span class="text-clip text-clip--primary" style="color:#c6ff00;">تکنوسایت</span>
-              </h2>
-              <ul class="list gap-2 ps-0 mb-0">
-                <li>
-                  <a
-                    class="link d-inline-block text-light text-opacity-70 hover:text-opacity-100 fw-medium fs-14"
-                    style="color:rgba(255,255,255,0.7); text-decoration:none;"
-                  >
-                    ۰۳۵-۳۲۲۴۹۷۷۴
-                  </a>
-                </li>
-                <li>
-                  <a
-                    class="link d-inline-block text-light text-opacity-70 hover:text-opacity-100 fw-medium fs-14"
-                    style="color:rgba(255,255,255,0.7); text-decoration:none;"
-                  >
-                    ۰۹۹۰۳۳۰۹۷۷۴
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
 
+      <div class="col-lg-4">
+        <h2 class="fs-28 mb-3 text-light">
+          آدرس و نشانی <span class="text-clip text-clip--primary">تکنوسایت</span>
+        </h2>
+        <ul class="list-unstyled fs-14 text-light text-opacity-70">
+          <li>
+            استان یزد، اردکان، خیابان صدرآباد، میدان انار، خروجی سوم، بلوار
+            حلال اهمر، کوچه ۲۹
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <h2 class="fs-28 mb-3 text-light">
+          ارتباط تلفنی با تیم <span class="text-clip text-clip--primary">تکنوسایت</span>
+        </h2>
+        <ul class="list-unstyled fs-14 text-light text-opacity-70">
+          <li>۰۳۵-۳۲۲۴۹۷۷۴</li>
+          <li>۰۹۹۰۳۳۰۹۷۷۴</li>
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="text-center overflow-hidden pt-4" style="border-top:1px solid rgba(255,255,255,0.2);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <p class="mb-0 text-wing text-light text-opacity-70" style="color:rgba(255,255,255,0.6);">
-            تمامی حقوق برای تکنوسایت محفوظ است. © TechnooSite
-          </p>
-        </div>
-      </div>
+
+    <hr class="opacity-25 my-4" style="border-color: #c7f32f" />
+
+    <div class="text-center">
+      <p class="mb-0 text-light text-opacity-70">
+        تمامی حقوق برای <span style="color: #c7f32f;">تکنوسایت</span> محفوظ است. © TechnooSite
+      </p>
     </div>
   </div>
-</div>
+</footer>
 <!-- Footer End -->
 
 

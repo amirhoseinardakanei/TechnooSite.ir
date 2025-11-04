@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
         smoothTouch: 0.1
     });
 
+
+
     /**
      * Slide Up
      */

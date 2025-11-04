@@ -20,34 +20,34 @@
           <div class="hero-5__center text-center">
             <div class="section-space-md-bottom">
               <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-xxl-11">
-      <div
-        class="d-inline-flex align-items-center gap-2 py-1 px-4 border border-2x border-primary border-opacity-90 rounded-1 bg-primary bg-opacity-10 text-primary-subtle fs-12 mb-6 gsap-fade-in"
-        data-delay="0.5"
-        data-y="50"
-      >
-        <iconify-icon
-          class="flex-shrink-0"
-          icon="mingcute:ai-fill"
-        ></iconify-icon>
-        <span class="d-inline-block fw-semibold">
-          {{ hero.button_text }}
-        </span>
-      </div>
-      <h1
-        class="mb-30 text-light gsap-text-animation"
-        data-delay="0.75"
-        data-split-type="lines"
-      >
-        {{ hero.title }} <br />
-        <span class="text-clip--primary">
-          {{ hero.subtitle }}
-        </span>
-      </h1>
-    </div>
-  </div>
-</div>
+                <div class="row justify-content-center">
+                  <div class="col-xxl-11">
+                    <div
+                      class="d-inline-flex align-items-center gap-2 py-1 px-4 border border-2x border-primary border-opacity-90 rounded-1 bg-primary bg-opacity-10 text-primary-subtle fs-12 mb-6 gsap-fade-in"
+                      data-delay="0.5"
+                      data-y="50"
+                    >
+                      <iconify-icon
+                        class="flex-shrink-0"
+                        icon="mingcute:ai-fill"
+                      ></iconify-icon>
+                      <span class="d-inline-block fw-semibold">
+                        {{ hero.button_text }}
+                      </span>
+                    </div>
+                    <h1
+                      class="mb-30 text-light gsap-text-animation"
+                      data-delay="0.75"
+                      data-split-type="lines"
+                    >
+                      {{ hero.title }} <br />
+                      <span class="text-clip--primary">
+                        {{ hero.subtitle }}
+                      </span>
+                    </h1>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="section-space-top">
               <div class="container">
@@ -296,8 +296,9 @@
           </svg>
         </div>
         <!-- Hero End -->
+
         <!-- Feature Section -->
-        <div class="section-space-md-y">
+        <div class="section-space-md-y" id="about-us">
           <div class="section-space-sm-bottom">
             <div class="container">
               <div class="row">
@@ -333,8 +334,9 @@
                       <a
                         class="btn btn-primary text-dark fw-semibold"
                         href="event-details.html"
-                        >تماس با تکنوسایت</a
+                        >نمونه کار  های تکنوسایت</a
                       >
+
                       <div
                         class="d-flex align-items-center flex-wrap row-gap-4 column-gap-6 mt-15"
                       >
@@ -391,6 +393,7 @@
                             </defs>
                           </svg>
                         </div>
+
                         <div
                           class="gradient-border gradient-border--surface-dark rounded-4 p-4 p-sm-6 max-text-5 poisition-relative overflow-hidden"
                         >
@@ -975,7 +978,7 @@
                           />
                           <span
                             class="d-inline-block flex-grow-1 fs-12 fw-semibold text-light"
-                            >سریع</span
+                            >سوئیفت</span
                           >
                         </div>
                       </li>
@@ -1428,7 +1431,7 @@
                           />
                           <span
                             class="d-inline-block flex-grow-1 fs-12 fw-semibold text-light"
-                            >سریع</span
+                            >سوئیفت</span
                           >
                         </div>
                       </li>
@@ -1645,7 +1648,7 @@
                     data-scroll-trigger="true"
                     data-split-type="lines"
                   >
-                    نهایت قدرت در کدنویسی با
+                    ویژگی و خدمات
                     <span class="text-clip text-clip--primary"
                       >تکنوسایت</span
                     >
@@ -1655,23 +1658,7 @@
             </div>
           </div>
 
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-md-10">
-                <div
-                  class="text-center hero-5__hero-img gsap-fade-in"
-                  data-scroll-trigger="true"
-                  data-y="25"
-                >
-                  <img
-                    alt="image"
-                    class="img-fluid"
-                    src="/static/img/code-preview-img.png"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div class="section-space-md-top">
             <div class="container">
               <div class="row">
@@ -1910,6 +1897,7 @@
 
         </div>
         <!-- Feature Section End -->
+
         <!-- Integration Tools  -->
         <div class="section-space-md-y">
           <div class="section-space-sm-bottom">
@@ -2469,9 +2457,8 @@
           </div>
         </div>
         <!-- Integration Tools End -->
-        <div
-          class="section-space-md-top section-space-bottom position-relative z-1 overflow-hidden"
-        >
+
+        <div class="section-space-md-top section-space-bottom position-relative z-1 overflow-hidden">
           <!-- Prcing Section -->
           <div class="section-space-sm-bottom">
             <div class="container">
@@ -2490,113 +2477,113 @@
               </div>
             </div>
           </div>
-<div class="container">
-  <div class="row g-4 g-lg-0 align-items-lg-end">
-    {% for plan in plans %}
-      <div
-        class="col-md-6 col-lg-4 price-card-4 gsap-fade-in"
-        data-delay="0.{{ forloop.counter }}"
-        data-scroll-trigger="true"
-        data-y="15"
-      >
-        <div class="gradient-border gradient-border--surface-dark rounded-4 p-4 p-sm-8 p-xxl-12 {% if plan.is_popular %}overflow-hidden{% endif %}">
-          <div class="d-flex align-items-center gap-3">
-            <iconify-icon
-              class="d-inline-block flex-shrink-0 fs-24 text-light text-opacity-60"
-              icon="solar:star-shine-bold-duotone"
-            ></iconify-icon>
-            <h6 class="text-light mb-0">{{ plan.title }}</h6>
-            {% if plan.is_popular %}
-              <span class="badge bg-light bg-opacity-10 text-primary ms-auto">محبوب</span>
-            {% endif %}
-          </div>
+        <div class="container">
+          <div class="row g-4 g-lg-0 align-items-lg-end">
+            {% for plan in plans %}
+              <div
+                class="col-md-6 col-lg-4 price-card-4 gsap-fade-in"
+                data-delay="0.{{ forloop.counter }}"
+                data-scroll-trigger="true"
+                data-y="15"
+              >
+                <div class="gradient-border gradient-border--surface-dark rounded-4 p-4 p-sm-8 p-xxl-12 {% if plan.is_popular %}overflow-hidden{% endif %}">
+                  <div class="d-flex align-items-center gap-3">
+                    <iconify-icon
+                      class="d-inline-block flex-shrink-0 fs-24 text-light text-opacity-60"
+                      icon="solar:star-shine-bold-duotone"
+                    ></iconify-icon>
+                    <h6 class="text-light mb-0">{{ plan.title }}</h6>
+                    {% if plan.is_popular %}
+                      <span class="badge bg-light bg-opacity-10 text-primary ms-auto">محبوب</span>
+                    {% endif %}
+                  </div>
 
-          <div class="d-flex align-items-baseline gap-2 mt-4 mb-6">
-            <h2 class="mb-0 text-light d-flex align-items-start gap-1">
-              <span class="d-inline-block">{{ plan.price }}</span>
-              <span class="mt-4 fs-14 fw-normal d-inline-block">میلیون تومان</span>
-            </h2>
-            {% if plan.per_month %}
-              <p class="fs-14 text-light mt-auto">/ ماه</p>
-            {% endif %}
-          </div>
+                  <div class="d-flex align-items-baseline gap-2 mt-4 mb-6">
+                    <h2 class="mb-0 text-light d-flex align-items-start gap-1">
+                      <span class="d-inline-block">{{ plan.price }}</span>
+                      <span class="mt-4 fs-14 fw-normal d-inline-block">میلیون تومان</span>
+                    </h2>
+                    {% if plan.per_month %}
+                      <p class="fs-14 text-light mt-auto">/ ماه</p>
+                    {% endif %}
+                  </div>
 
-          <p class="mb-8 text-light text-opacity-60">
-            {{ plan.description }}
-          </p>
+                  <p class="mb-8 text-light text-opacity-60">
+                    {{ plan.description }}
+                  </p>
 
-          <ul class="list gap-3">
-            {% for feature in plan.get_features_list %}
-              <li class="d-flex align-items-center gap-2">
-                <iconify-icon
-                  class="flex-shrink-0 d-inline-block text-light"
-                  icon="bi:check-lg"
-                ></iconify-icon>
-                <p class="mb-0 text-light fs-14 fw-medium">{{ feature }}</p>
-              </li>
+                  <ul class="list gap-3">
+                    {% for feature in plan.get_features_list %}
+                      <li class="d-flex align-items-center gap-2">
+                        <iconify-icon
+                          class="flex-shrink-0 d-inline-block text-light"
+                          icon="bi:check-lg"
+                        ></iconify-icon>
+                        <p class="mb-0 text-light fs-14 fw-medium">{{ feature }}</p>
+                      </li>
+                    {% endfor %}
+                  </ul>
+
+                  <a
+                    class="btn {% if plan.is_popular %}btn-primary text-dark{% else %}bg-light hover:bg-primary bg-opacity-5 text-primary hover:text-dark{% endif %} gap-1 justify-content-center align-items-center fw-semibold mt-8 w-100"
+                    href="{{ plan.button_link }}"
+                  >
+                    <span class="d-inline-block">{{ plan.button_text }}</span>
+                    <iconify-icon
+                      class="align-middle fs-20 flex-shrink-0"
+                      icon="solar:arrow-left-outline"
+                    ></iconify-icon>
+                  </a>
+                </div>
+              </div>
             {% endfor %}
-          </ul>
-
-          <a
-            class="btn {% if plan.is_popular %}btn-primary text-dark{% else %}bg-light hover:bg-primary bg-opacity-5 text-primary hover:text-dark{% endif %} gap-1 justify-content-center align-items-center fw-semibold mt-8 w-100"
-            href="{{ plan.button_link }}"
-          >
-            <span class="d-inline-block">{{ plan.button_text }}</span>
-            <iconify-icon
-              class="align-middle fs-20 flex-shrink-0"
-              icon="solar:arrow-left-outline"
-            ></iconify-icon>
-          </a>
+          </div>
         </div>
-      </div>
-    {% endfor %}
-  </div>
-</div>
-
           <!-- Prcing Section End -->
+
           <!-- Testimonial Section -->
           <div class="section-space-md-top">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div
-          class="testimonial-slider-3 section-space-lg-y px-4 px-sm-6 px-md-8 px-lg-12 px-xl-15 px-xxl-20 border border-light border-opacity-5 rounded-4 bg-dark bg-opacity-5 gsap-fade-in"
-          data-scroll-trigger="true"
-          data-y="5"
-        >
-          <div class="testimonial-slider-3__is swiper">
-            <div class="swiper-wrapper">
-              {% for t in testimonials %}
-                <div class="swiper-slide">
-                  <iconify-icon
-                    class="d-inline-block fs-48 text-primary-subtle"
-                    icon="bxs:quote-left"
-                  ></iconify-icon>
-                  <p class="my-8 fs-36 fw-semibold text-light text-opacity-90">
-                    {{ t.message }}
-                  </p>
-                  <div class="d-flex align-items-center gap-4">
-                    <div class="avatar avatar-xl">
-                      <img alt="{{ t.name }}" class="avatar__img" src="{{ t.avatar.url }}" />
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div
+                    class="testimonial-slider-3 section-space-lg-y px-4 px-sm-6 px-md-8 px-lg-12 px-xl-15 px-xxl-20 border border-light border-opacity-5 rounded-4 bg-dark bg-opacity-5 gsap-fade-in"
+                    data-scroll-trigger="true"
+                    data-y="5"
+                  >
+                    <div class="testimonial-slider-3__is swiper">
+                      <div class="swiper-wrapper">
+                        {% for t in testimonials %}
+                          <div class="swiper-slide">
+                            <iconify-icon
+                              class="d-inline-block fs-48 text-primary-subtle"
+                              icon="bxs:quote-left"
+                            ></iconify-icon>
+                            <p class="my-8 fs-36 fw-semibold text-light text-opacity-90">
+                              {{ t.message }}
+                            </p>
+                            <div class="d-flex align-items-center gap-4">
+                              <div class="avatar avatar-xl">
+                                <img alt="{{ t.name }}" class="avatar__img" src="{{ t.avatar.url }}" />
+                              </div>
+                              <a class="link d-block group" href="{{ t.link|default:'#' }}">
+                                <span class="d-block fs-14 text-light text-opacity-70">
+                                  {{ t.role }}
+                                </span>
+                                <span class="d-block fs-20 mb-1 fw-bold text-light text-opacity-90 group-hover:text-primary transition">
+                                  {{ t.name }}
+                                </span>
+                              </a>
+                            </div>
+                          </div>
+                        {% endfor %}
+                      </div>
                     </div>
-                    <a class="link d-block group" href="{{ t.link|default:'#' }}">
-                      <span class="d-block fs-14 text-light text-opacity-70">
-                        {{ t.role }}
-                      </span>
-                      <span class="d-block fs-20 mb-1 fw-bold text-light text-opacity-90 group-hover:text-primary transition">
-                        {{ t.name }}
-                      </span>
-                    </a>
                   </div>
                 </div>
-              {% endfor %}
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
 
           <!-- Testimonial Section End -->
           <img
@@ -2607,75 +2594,75 @@
             src="/static/img/shapes/pricing-section-image-1.png"
           />
         </div>
-         <!-- FAQ Section  -->
-<div class="section-space-y position-relative z-1 overflow-hidden">
-  <div class="container">
-    <div class="row g-4 justify-content-between">
-      <div class="col-md-6 col-xl-5">
-        <h3
-          class="text-light overflow-hidden gsap-text-animation"
-          data-scroll-trigger="true"
-          data-split-type="lines"
-        >
-          سوالات
-          <span class="text-clip text-clip--primary">متداول</span>
-        </h3>
-        <p
-          class="mb-8 text-light text-opacity-70 overflow-hidden gsap-text-animation"
-          data-scroll-trigger="true"
-          data-split-type="words"
-        >
-          وضوح و بینش‌ها را کشف کنید زیرا ما پاسخ سوالات شما را ارائه می‌کنیم.
-        </p>
-        <a
-          class="btn btn-primary text-dark gap-1 justify-content-center align-items-center fw-semibold gsap-fade-in"
-          data-scroll-trigger="true"
-          data-y="50"
-          href="contact.html"
-        >
-          <span class="d-inline-block">اکنون با ما تماس بگیرید</span>
-          <iconify-icon
-            class="align-middle fs-20 flex-shrink-0"
-            icon="solar:arrow-left-outline"
-          ></iconify-icon>
-        </a>
-      </div>
-
-      <div class="col-md-6">
-        <div
-          class="accordion accordion--dark accordion-separate-body"
-          id="accordion-separate-rounded"
-        >
-          {% for faq in faqs %}
-            <div class="accordion-item gsap-fade-in" data-scroll-trigger="true" data-y="15">
-              <h2 class="accordion-header">
-                <button
-                  class="accordion-button bg-dark text-light fw-medium {% if not forloop.first %}collapsed{% endif %}"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#accordion-s{{ forloop.counter }}"
-                  type="button"
-                  aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+        <!-- FAQ Section  -->
+        <div class="section-space-y position-relative z-1 overflow-hidden">
+          <div class="container">
+            <div class="row g-4 justify-content-between">
+              <div class="col-md-6 col-xl-5">
+                <h3
+                  class="text-light overflow-hidden gsap-text-animation"
+                  data-scroll-trigger="true"
+                  data-split-type="lines"
                 >
-                  {{ faq.question }}
-                </button>
-              </h2>
-              <div
-                id="accordion-s{{ forloop.counter }}"
-                class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
-                data-bs-parent="#accordion-separate-rounded"
-              >
-                <div class="accordion-body fs-14 bg-dark text-light text-opacity-70">
-                  {{ faq.answer }}
+                  سوالات
+                  <span class="text-clip text-clip--primary">متداول</span>
+                </h3>
+                <p
+                  class="mb-8 text-light text-opacity-70 overflow-hidden gsap-text-animation"
+                  data-scroll-trigger="true"
+                  data-split-type="words"
+                >
+                  وضوح و بینش‌ها را کشف کنید زیرا ما پاسخ سوالات شما را ارائه می‌کنیم.
+                </p>
+                <a
+                  class="btn btn-primary text-dark gap-1 justify-content-center align-items-center fw-semibold gsap-fade-in"
+                  data-scroll-trigger="true"
+                  data-y="50"
+                  href="contact.html"
+                >
+                  <span class="d-inline-block">اکنون با ما تماس بگیرید</span>
+                  <iconify-icon
+                    class="align-middle fs-20 flex-shrink-0"
+                    icon="solar:arrow-left-outline"
+                  ></iconify-icon>
+                </a>
+              </div>
+
+              <div class="col-md-6">
+                <div
+                  class="accordion accordion--dark accordion-separate-body"
+                  id="accordion-separate-rounded"
+                >
+                  {% for faq in faqs %}
+                    <div class="accordion-item gsap-fade-in" data-scroll-trigger="true" data-y="15">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button bg-dark text-light fw-medium {% if not forloop.first %}collapsed{% endif %}"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#accordion-s{{ forloop.counter }}"
+                          type="button"
+                          aria-expanded="{% if forloop.first %}true{% else %}false{% endif %}"
+                        >
+                          {{ faq.question }}
+                        </button>
+                      </h2>
+                      <div
+                        id="accordion-s{{ forloop.counter }}"
+                        class="accordion-collapse collapse {% if forloop.first %}show{% endif %}"
+                        data-bs-parent="#accordion-separate-rounded"
+                      >
+                        <div class="accordion-body fs-14 bg-dark text-light text-opacity-70">
+                          {{ faq.answer }}
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
                 </div>
               </div>
             </div>
-          {% endfor %}
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- FAQ Section End -->
+        <!-- FAQ Section End -->
 
 <!--        &lt;!&ndash; CTA Section  &ndash;&gt;-->
 <!--        <div class="container">-->
