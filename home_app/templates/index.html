@@ -333,7 +333,7 @@
                       </h4>
                       <a
                         class="btn btn-primary text-dark fw-semibold"
-                        href="event-details.html"
+                        href="{% url 'portfolio_list' %}"
                         >نمونه کار  های تکنوسایت</a
                       >
 
@@ -2526,7 +2526,7 @@
 
                   <a
                     class="btn {% if plan.is_popular %}btn-primary text-dark{% else %}bg-light hover:bg-primary bg-opacity-5 text-primary hover:text-dark{% endif %} gap-1 justify-content-center align-items-center fw-semibold mt-8 w-100"
-                    href="{{ plan.button_link }}"
+                    href="{% url 'contact' %}"
                   >
                     <span class="d-inline-block">{{ plan.button_text }}</span>
                     <iconify-icon
@@ -2618,7 +2618,7 @@
                   class="btn btn-primary text-dark gap-1 justify-content-center align-items-center fw-semibold gsap-fade-in"
                   data-scroll-trigger="true"
                   data-y="50"
-                  href="contact.html"
+                  href="{% url 'contact' %}"
                 >
                   <span class="d-inline-block">اکنون با ما تماس بگیرید</span>
                   <iconify-icon
